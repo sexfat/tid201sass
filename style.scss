@@ -3,14 +3,20 @@
 //變數目前只能放在屬性值裡
 
 $fontSize: 16px; //數值
+$fontFamily: Arial, Helvetica, sans-serif; //字串
+$fontColor : #ff0e9f;// 顏色
+$bgc: #ffe59e;//顏色
+$marginList : 10px auto 20px; // list
+
 
 
 body {
  font-size: $fontSize;
- margin: 0;
+ font-family:$fontFamily;
+ margin: $marginList;
  padding: 0;
- background-color: #ffe59e;
- color :#ff0e9f;
+ background-color: $bgc;
+ color :$fontColor;
  width: 100%;
 
 }
