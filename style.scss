@@ -1,7 +1,7 @@
 /*css 註解*/
 //scss註解
 //變數目前只能放在屬性值裡
-@use "sass:map";
+@use "sass:map"; // sass 3.0的引用函式的寫法
 
 $fontSize: 16px; //數值
 $fontFamily: Arial, Helvetica, sans-serif; //字串
@@ -43,4 +43,16 @@ body {
 
 h1 {
   font-size: map.get($title, h3);
+}
+
+$p : 40px; //全域變數
+
+p.inner {
+  $p : 50px; //區域變數
+  font-size: $p;
+  $a: 30px !global;//區域變數 加入!global 就會變成全域變數
+}
+
+p.out{   
+ font-size: $a;//取不到區域變數的值 
 }
