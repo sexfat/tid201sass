@@ -56,3 +56,12 @@ p.inner {
 p.out{   
  font-size: $a;//取不到區域變數的值 
 }
+
+//改變變數權重
+$b : #000;
+$b :#ff0000 !default;
+
+p.color {
+   color: $b
+}
+
