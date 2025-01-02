@@ -4,24 +4,30 @@
 
 $fontSize: 16px; //數值
 $fontFamily: Arial, Helvetica, sans-serif; //字串
-$fontColor : #ff0e9f;// 顏色
-$bgc: #ffe59e;//顏色
+$fontColor : #ff0e9f; // 顏色
+$bgc: #ffe59e; //顏色
 $marginList : 10px auto 20px; // list
+$fullwidth :true; // 布林值
 
 
 
 body {
- font-size: $fontSize;
- font-family:$fontFamily;
- margin: $marginList;
- padding: 0;
- background-color: $bgc;
- color :$fontColor;
- width: 100%;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    margin: $marginList;
+    padding: 0;
+    background-color: $bgc;
+    color: $fontColor;
+    width: 100%;
 
 }
 
 .wrapper {
-  width: 1200px;
-  margin: auto;
+    @if $fullwidth {
+        width: 100%;
+       
+    }@else {
+        width: 1200px;        
+        margin: auto;
+    }
 }
