@@ -1,0 +1,21 @@
+/*css 註解*/
+//scss註解
+//變數目前只能放在屬性值裡
+
+$fontSize: 16px; //數值
+
+
+body {
+ font-size: $fontSize;
+ margin: 0;
+ padding: 0;
+ background-color: #ffe59e;
+ color :#ff0e9f;
+ width: 100%;
+
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+}
