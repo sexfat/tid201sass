@@ -32,6 +32,7 @@ body {
 .wrapper {
     h1 {
         color: #f20;
+
         span {
             font-size: 20px;
             color: #f4d033
@@ -92,4 +93,18 @@ $img : banner;
 
 .bg {
     background-image: url('images/#{$img}.jpg');
+}
+
+
+
+.index {
+    h1 {
+        color: #333;
+    }
+}
+
+.about {
+    h1 {
+        color: #666;
+    }
 }
