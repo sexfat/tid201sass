@@ -1,0 +1,29 @@
+@use "sass:map"; // sass 3.0的引用函式的寫法
+
+// css import
+// @import url('header.css');
+
+// sass import
+@import 'base/var';
+@import 'base/font';
+@import 'base/color';
+// @import 'base/other';
+
+// mixin
+@import 'mixin/mixin';
+//component
+@import 'component/btn';
+@import 'component/form';
+@import 'component/table';
+
+//layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// page
+@import 'page/index';
+@import 'page/about';
+
+
+
+

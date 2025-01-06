@@ -1,12 +1,3 @@
-@use "sass:map"; // sass 3.0的引用函式的寫法
-
-// sass import
-@import 'var';
-// css import
-// @import url('header.css');
-
-
-
 body {
     font-size: $fontSize;
     font-family: $fontFamily;
