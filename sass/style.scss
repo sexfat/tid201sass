@@ -4,40 +4,30 @@
 // @import url('header.css');
 
 // sass import
-@use 'base/var';
-@use 'base/reset';
-@use 'base/font';
-@use 'base/color';
-// @use 'base/other';
+@import 'base/var';
+@import 'base/reset';
+@import 'base/font';
+@import 'base/color';
+// @import 'base/other';
 
 // mixin
-@use 'mixin/mixin';
+@import 'mixin/mixin';
 //component
-@use 'component/btn';
-@use 'component/form';
-@use 'component/table';
+@import 'component/btn';
+@import 'component/form';
+@import 'component/table';
 
 //layout
-@use 'layout/header';
-@use 'layout/footer';
-@use 'layout/content';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/content';
 
 // page
-@use 'page/index';
-@use 'page/about';
+@import 'page/index';
+@import 'page/about';
 
 
-@mixin rect($w: 300px, $h: 400px, $borderRadius : null) {
-    width: $w;
-    height: $h;
-    border-radius: $borderRadius;
-}
 
-@mixin titleH1() {
-    font-size: 56px;
-    font-weight: 800;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 
 .box {
@@ -60,57 +50,14 @@
 }
 
 
-@mixin layout($w) {
-    @if $w ==100 {
-        width: $w * 1%;
-    }
 
-    @else if $w < 100 {
-        width: $w * 1%;
-        margin: auto;
-    }
-
-    @else {
-        width: $w * 1px;
-        margin: auto;
-    }
-}
-
-
-@mixin btn($bgc , $color , $p , $borderRadius:null){
-  padding: $p;
-  text-align: center;
-  border-radius: $borderRadius;
-  background-color: $bgc;
-  color: $color;
-}
-
-
-.container-full {
-    @include layout(100);
-}
-
-.container {
-    @include layout(1366);
-}
-
-.content {
-   height: 400px;
-   background-color: #d7d7d7;
-}
 
 
 .card {
    width: 300px;
    margin: auto;
-
-
 }
 
-.btn-default {
-  @include btn(#0048ff , #343434 , 10px , 8px);
-  border: 1px solid #002e6d;
-  box-shadow: 1px 1px 10px #333;
-}
+
 
 

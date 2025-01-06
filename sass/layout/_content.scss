@@ -1,0 +1,12 @@
+.container-full {
+    @include layout(100);
+}
+
+.container {
+    @include layout(1366);
+}
+
+.content {
+   height: 400px;
+   background-color: #d7d7d7;
+}

@@ -1,3 +1,17 @@
+@mixin rect($w: 300px, $h: 400px, $borderRadius : null) {
+    width: $w;
+    height: $h;
+    border-radius: $borderRadius;
+}
+
+@mixin titleH1() {
+    font-size: 56px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 //========================
 // layout 
 // @include layout(100)  = 滿版
@@ -19,3 +33,15 @@
         margin: auto;
     }
 }
+
+
+
+// 按鈕
+// @include btn(被景色 , 字顏色, 內距, 圓角)
+@mixin btn($bgc , $color , $p , $borderRadius:null){
+    padding: $p;
+    text-align: center;
+    border-radius: $borderRadius;
+    background-color: $bgc;
+    color: $color;
+  }
