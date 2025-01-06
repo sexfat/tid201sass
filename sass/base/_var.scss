@@ -1,0 +1,16 @@
+/*css 註解*/
+//scss註解
+//變數目前只能放在屬性值裡
+
+
+$fontSize: 16px; //數值
+$fontFamily: Arial, Helvetica, sans-serif; //字串
+$fontColor : #ff0e9f; // 顏色
+$bgc: #ffe59e; //顏色
+$marginList : 10px auto 20px; // list
+$fullwidth :true; // 布林值
+$number : null; // 空值 屬性被刪除
+$title : (key : value,
+    h1 : 50px,
+    h2 : 40px,
+    h3: 30px); //map
