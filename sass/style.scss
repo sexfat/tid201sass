@@ -4,25 +4,57 @@
 // @import url('header.css');
 
 // sass import
-@import 'base/var';
-@import 'base/font';
-@import 'base/color';
-// @import 'base/other';
+@use 'base/var';
+@use 'base/font';
+@use 'base/color';
+// @use 'base/other';
 
 // mixin
-@import 'mixin/mixin';
+@use 'mixin/mixin';
 //component
-@import 'component/btn';
-@import 'component/form';
-@import 'component/table';
+@use 'component/btn';
+@use 'component/form';
+@use 'component/table';
 
 //layout
-@import 'layout/header';
-@import 'layout/footer';
+@use 'layout/header';
+@use 'layout/footer';
 
 // page
-@import 'page/index';
-@import 'page/about';
+@use 'page/index';
+@use 'page/about';
+
+
+@mixin rect(){
+  width: 300px;
+  height: 400px;
+}
+
+@mixin titleH1(){
+   font-size: 56px;
+   font-weight: 800;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.box {
+  @include rect();
+  background-color: #fe3e3e;
+}
+
+.box2 {
+    @include rect();
+    background-color: #c6e900;
+}
+
+
+.titleH1 {
+  @include titleH1();
+}
+
+.titleIndex {
+   @include titleH1();
+}
 
 
 

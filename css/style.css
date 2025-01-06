@@ -1,57 +1,38 @@
 @charset "UTF-8";
 /*css 註解*/
-body {
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 10px auto 20px;
-  padding: 0;
-  background-color: #ffe59e;
-  color: #ff0e9f;
+.btn {
+  display: flex;
   width: 100%;
-}
-
-.wrapper {
-  width: 100%;
-}
-.wrapper h1 {
-  color: #f20;
-}
-.wrapper h1 span {
-  font-size: 20px;
-  color: #f4d033;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-p.inner {
-  font-size: 50px;
-}
-
-p.out {
-  font-size: 30px;
-}
-
-p.color {
-  color: #000;
+  height: 52px;
+  padding: 16px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
 }
 
 .box {
   width: 300px;
-  height: 300px;
+  height: 400px;
+  background-color: #fe3e3e;
 }
 
-.bg {
-  background-image: url("images/banner.jpg");
+.box2 {
+  width: 300px;
+  height: 400px;
+  background-color: #c6e900;
 }
 
-.index h1 {
-  color: #333;
+.titleH1 {
+  font-size: 56px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.about h1 {
-  color: #666;
+.titleIndex {
+  font-size: 56px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
