@@ -25,9 +25,9 @@
 @use 'page/about';
 
 
-@mixin rect(){
-  width: 300px;
-  height: 400px;
+@mixin rect($w , $h){
+  width: $w;
+  height: $h;
 }
 
 @mixin titleH1(){
@@ -38,12 +38,12 @@
 
 
 .box {
-  @include rect();
+  @include rect(300px , 400px);
   background-color: #fe3e3e;
 }
 
 .box2 {
-    @include rect();
+    @include rect(100px ,200px);
     background-color: #c6e900;
 }
 
