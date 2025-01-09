@@ -18,6 +18,30 @@ body, h1, h2, h3 {
   background-color: #9a1900;
 }
 
+.card {
+  width: 300px;
+  height: 500px;
+  border-radius: 6px;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #858585;
+}
+
+.card-item {
+  width: 300px;
+  height: 300px;
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.card-item:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #333;
+}
+
 .btn {
   display: flex;
   width: 100%;

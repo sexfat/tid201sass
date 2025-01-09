@@ -68,7 +68,7 @@
     }
 }
 
-@mixin btnAll($bgc , $color ,$borderRadius:10px ,$border: null) {
+@mixin btnAll($bgc , $color , $borderRadius: 10px, $border: null) {
 
     background-color: $bgc;
     color: $color;
@@ -92,5 +92,32 @@
 }
 
 .btn-error {
-    @include btnAll(rgb(255, 43, 1), #ffffff , 30px);
+    @include btnAll(rgb(255, 43, 1), #ffffff, 30px);
+}
+
+
+
+@mixin cardShadow($borderC : #858585) {
+    transition: all .3s ease;
+    &:hover {
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid $borderC;
+    }
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    @include cardShadow()
+
+}
+
+.card-item {
+   width: 300px;
+   height: 300px;
+   background-color: #f3f3f3;
+   border-radius: 6px;
+   @include cardShadow(#333);
 }
