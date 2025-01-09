@@ -5,17 +5,17 @@ body, h1, h2, h3 {
   padding: 0;
 }
 
-.btn-defaults {
-  background-color: rgb(0, 255, 153);
-  color: #001e4f;
+.btn-error {
+  background-color: rgb(255, 43, 1);
+  color: #ffffff;
   padding: 10px 20px;
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 30px;
 }
-.btn-defaults:hover {
-  background-color: #00995c;
+.btn-error:hover {
+  background-color: #9a1900;
 }
 
 .btn {

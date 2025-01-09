@@ -68,27 +68,29 @@
     }
 }
 
-@mixin btnAll($bgc , $color , $border:null) {
-    .btn-defaults {
-        background-color: $bgc;
-        color: $color;
-        padding: 10px 20px;
-        text-align: center;
-        transition: all .3s ease;
-        cursor: pointer;
+@mixin btnAll($bgc , $color ,$borderRadius:10px ,$border: null) {
 
-        @if $border {
-            border: $border solid $bgc;
-            background-color: initial;
-            color: $bgc;
-        }
-        border-radius: 8px;
-        &:hover {
-            background-color: darken($bgc, 20);
-        }
+    background-color: $bgc;
+    color: $color;
+    padding: 10px 20px;
+    text-align: center;
+    transition: all .3s ease;
+    cursor: pointer;
+
+    @if $border {
+        border: $border solid $bgc;
+        background-color: initial;
+        color: $bgc;
+    }
+
+    border-radius: $borderRadius;
+
+    &:hover {
+        background-color: darken($bgc, 20);
     }
 
 }
 
-
-@include btnAll(rgb(0, 255, 153), #001e4f);
+.btn-error {
+    @include btnAll(rgb(255, 43, 1), #ffffff , 30px);
+}
