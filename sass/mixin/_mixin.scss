@@ -54,10 +54,26 @@
 //手機板斷點
 
 @mixin m(){
-    @media screen and (max-width: 560px) {
+    @media screen and (max-width: $m) {
         // 手機版內容
         @content;
     }
 }
+
+//自行管理斷點
+@mixin s($p){
+    @media screen and (max-width: $p) {
+        // 手機版內容
+        @content;
+    }
+}
+
+@media screen and (max-width: $p) {
+    // 手機版內容
+   
+}
+
+
+
 
 

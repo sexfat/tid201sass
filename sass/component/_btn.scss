@@ -17,6 +17,9 @@
       width: 200px;
       color: #f20
     }
+    @include s(700px){
+       color: #0033ff
+    }
     box-shadow: 1px 1px 20px #d0d0d0;
     transition: all .3s ease;
     cursor: pointer;
