@@ -9,4 +9,9 @@
 .content {
    height: 400px;
    background-color: #d7d7d7;
+   @include m(){
+      height: 600px;
+      background-color: #ffff00;
+   }
+   
 }

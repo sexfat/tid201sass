@@ -12,11 +12,15 @@
 
 
 .btn-default {
-    @include btn(#0048ff , #ffffff , 10px , 30px);
+    @include btn(#ffaa00 , #ffffff , 10px , 30px);
+    @include m(){
+      width: 200px;
+      color: #f20
+    }
     box-shadow: 1px 1px 20px #d0d0d0;
     transition: all .3s ease;
     cursor: pointer;
     &:hover {
-      background-color: #000792;
+      background-color: #b7870d;
     }
 }

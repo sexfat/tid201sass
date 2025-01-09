@@ -4,6 +4,9 @@
     border-radius: $borderRadius;
 }
 
+
+
+
 @mixin titleH1() {
     font-size: 56px;
     font-weight: 800;
@@ -38,10 +41,23 @@
 
 // 按鈕
 // @include btn(被景色 , 字顏色, 內距, 圓角)
-@mixin btn($bgc , $color , $p , $borderRadius:null){
+@mixin btn($bgc , $color , $p , $borderRadius: null) {
     padding: $p;
     text-align: center;
     border-radius: $borderRadius;
     background-color: $bgc;
     color: $color;
-  }
+}
+
+
+
+//手機板斷點
+
+@mixin m(){
+    @media screen and (max-width: 560px) {
+        // 手機版內容
+        @content;
+    }
+}
+
+
