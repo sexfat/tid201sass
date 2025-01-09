@@ -53,7 +53,7 @@
 
 //手機板斷點
 
-@mixin m(){
+@mixin m() {
     @media screen and (max-width: $m) {
         // 手機版內容
         @content;
@@ -61,19 +61,34 @@
 }
 
 //自行管理斷點
-@mixin s($p){
+@mixin s($p) {
     @media screen and (max-width: $p) {
         // 手機版內容
         @content;
     }
 }
 
-@media screen and (max-width: $p) {
-    // 手機版內容
-   
+@mixin btnAll($bgc , $color , $border:null) {
+    .btn-defaults {
+        background-color: $bgc;
+        color: $color;
+        padding: 10px 20px;
+        text-align: center;
+        transition: all .3s ease;
+        cursor: pointer;
+
+        @if $border {
+            border: $border solid $bgc;
+            background-color: initial;
+            color: $bgc;
+        }
+        border-radius: 8px;
+        &:hover {
+            background-color: darken($bgc, 20);
+        }
+    }
+
 }
 
 
-
-
-
+@include btnAll(rgb(0, 255, 153), #001e4f);
