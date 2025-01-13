@@ -83,12 +83,12 @@
 @mixin g-color($class,$bgc) {
     @for $i from 1 through 10 {
         .#{$class}-#{$i} {
-            background-color: lighten($bgc, $i *9);
+            background-color: lighten($bgc, $i *7.4);
             width: 150px;
             height: 30px;
         }
     }
 }
 
-@include g-color('yellow',  #7d7900);
+@include g-color('yellow',  #66005a);
 @include g-color('blue',  #00285d);
