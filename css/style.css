@@ -419,4 +419,56 @@ body, h1, h2, h3 {
   background-image: url("images/banner2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.key {
+  color: value;
+}
+
+.primary {
+  color: #ddff00;
+}
+
+.secondary {
+  color: #ff3c00;
+}
+
+.error {
+  color: #f20;
+}
+
+.info {
+  color: #0022ff;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+span {
+  font-size: 14px;
+}
+
+.gat {
+  font-size: 13px;
+}
+
+li {
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

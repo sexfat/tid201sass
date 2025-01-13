@@ -84,6 +84,7 @@
 @include title(heavy);
 
 
+//@each
 $url: slider01 slider02 slide03 banner banner2; // list
 
 @each $k in $url {
@@ -93,3 +94,44 @@ $url: slider01 slider02 slide03 banner banner2; // list
        background-size: cover;
     }
 }
+
+// map
+$bg-color : (
+  key : value,
+  primary : #ddff00,
+  secondary : #ff3c00,
+  error : #f20,
+  info : #0022ff
+);
+
+@each $k , $v in $bg-color {
+  .#{$k} {
+     color: $v
+  } 
+}
+
+$subject : (
+  h1 : 40px,
+  h2:  36px,
+  h3: 30px,
+  h4 : 24px,
+  h5 : 16px,
+  span : 14px,
+  '.gat' : 13px,
+  li : 14px
+);
+
+@each $k , $v in $subject {
+   #{$k} {
+       font-size: $v;
+   }
+}
+
+//============
+// h1 {
+//  font-size: 40px;
+// }
+// h2 {
+//   font-size: 36;
+// }
+//===============
