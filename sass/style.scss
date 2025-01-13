@@ -92,3 +92,13 @@
 
 @include g-color('yellow',  #66005a);
 @include g-color('blue',  #00285d);
+
+
+
+.spec {
+    width: 150px;
+    height: 50px;
+    //顏色函式
+    background-color: darken( #ffffff, 20); // 變暗
+    background-color: lighten( #ffffff, 20);// 變亮
+}

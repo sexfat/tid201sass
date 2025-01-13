@@ -372,4 +372,11 @@ body, h1, h2, h3 {
   background-color: #d7e8ff;
   width: 150px;
   height: 30px;
+}
+
+.spec {
+  width: 150px;
+  height: 50px;
+  background-color: #cccccc;
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
