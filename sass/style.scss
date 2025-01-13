@@ -76,4 +76,13 @@
     }
 }
 
-@include push(40);
+@include push(10);
+
+
+@for $i from 1 through 10 {
+    .bgc-#{$i} {
+        background-color: lighten(rgb(0, 46, 96) , $i *9);
+        width: 150px;
+        height: 30px;
+    }
+}
