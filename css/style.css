@@ -379,4 +379,9 @@ body, h1, h2, h3 {
   height: 50px;
   background-color: #cccccc;
   background-color: white;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 34px;
 }/*# sourceMappingURL=style.css.map */

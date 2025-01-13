@@ -80,7 +80,7 @@
 
 @include push(10);
 
-@mixin g-color($class,$bgc) {
+@mixin g-color($class, $bgc) {
     @for $i from 1 through 10 {
         .#{$class}-#{$i} {
             background-color: lighten($bgc, $i *7.4);
@@ -90,8 +90,8 @@
     }
 }
 
-@include g-color('yellow',  #66005a);
-@include g-color('blue',  #00285d);
+@include g-color('yellow', #66005a);
+@include g-color('blue', #00285d);
 
 
 
@@ -99,6 +99,29 @@
     width: 150px;
     height: 50px;
     //顏色函式
-    background-color: darken( #ffffff, 20); // 變暗
-    background-color: lighten( #ffffff, 20);// 變亮
+    background-color: darken(#ffffff, 20); // 變暗
+    background-color: lighten(#ffffff, 20); // 變亮
 }
+
+// @if @else @else if
+
+
+@mixin title($fonts:medium) {
+    .title {
+        @if $fonts ==heavy {
+            font-weight: 800;
+            font-size: 34px;
+        }
+
+        @else if $fonts ==medium {
+            font-weight: 500;
+            font-size: 28px;
+        }
+
+        @else if $fonts ==thin {
+            font-weight: 200;
+            font-size: 20px;
+        }
+    }
+}
+@include title(heavy);
