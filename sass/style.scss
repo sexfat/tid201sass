@@ -49,15 +49,31 @@
     @include titleH1();
 }
 
-
-
-
-
 .card {
-   width: 300px;
-   margin: auto;
+    width: 300px;
+    margin: auto;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background-color: #ff4545;
+
 }
 
 
+@mixin push($val) {
+    @for $i from 1 through $val {
+        .p-left-#{$i} {
+            margin-left: $i * 1px;
+        }
+        .p-right-#{$i}{
+            margin-right: $i * 1px;
+        }
+        .p-top-#{$i}{
+            margin-top: $i * 1px;
+        }
+    }
+}
 
-
+@include push(40);
