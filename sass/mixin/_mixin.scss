@@ -96,7 +96,8 @@
 }
 
 
-
+//卡片陰影
+//@include cardShadow($邊框顏色)
 @mixin cardShadow($borderC : #858585) {
     transition: all .3s ease;
     &:hover {
