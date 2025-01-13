@@ -67,10 +67,12 @@
         .p-left-#{$i} {
             margin-left: $i * 1px;
         }
-        .p-right-#{$i}{
+
+        .p-right-#{$i} {
             margin-right: $i * 1px;
         }
-        .p-top-#{$i}{
+
+        .p-top-#{$i} {
             margin-top: $i * 1px;
         }
     }
@@ -78,11 +80,15 @@
 
 @include push(10);
 
-
-@for $i from 1 through 10 {
-    .bgc-#{$i} {
-        background-color: lighten(rgb(0, 46, 96) , $i *9);
-        width: 150px;
-        height: 30px;
+@mixin g-color($class,$bgc) {
+    @for $i from 1 through 10 {
+        .#{$class}-#{$i} {
+            background-color: lighten($bgc, $i *9);
+            width: 150px;
+            height: 30px;
+        }
     }
 }
+
+@include g-color('yellow',  #7d7900);
+@include g-color('blue',  #00285d);
