@@ -62,33 +62,11 @@
 }
 
 
-@mixin push($val) {
-    @for $i from 1 through $val {
-        .p-left-#{$i} {
-            margin-left: $i * 1px;
-        }
 
-        .p-right-#{$i} {
-            margin-right: $i * 1px;
-        }
-
-        .p-top-#{$i} {
-            margin-top: $i * 1px;
-        }
-    }
-}
 
 @include push(10);
 
-@mixin g-color($class, $bgc) {
-    @for $i from 1 through 10 {
-        .#{$class}-#{$i} {
-            background-color: lighten($bgc, $i *7.4);
-            width: 150px;
-            height: 30px;
-        }
-    }
-}
+
 
 @include g-color('yellow', #66005a);
 @include g-color('blue', #00285d);
@@ -103,34 +81,15 @@
     background-color: lighten(#ffffff, 20); // 變亮
 }
 
-// @if @else @else if
+@include title(heavy);
 
 
-@mixin title($fonts:medium) {
-    .title {
-        @if $fonts ==heavy {
-            font-weight: 800;
-            font-size: 34px;
-            @include m(){
-                font-size: 50px;  
-            }
-        }
+$url: slider01 slider02 slide03 banner banner2; // list
 
-        @else if $fonts ==medium {
-            font-weight: 500;
-            font-size: 28px;
-            @include m(){
-                font-size: 36px;  
-            }
-        }
-
-        @else if $fonts ==thin {
-            font-weight: 200;
-            font-size: 20px;
-            @include m(){
-                font-size: 26px;  
-            }
-        }
+@each $k in $url {
+    .#{$k}-cover {
+       background-image: url('images/#{$k}.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
     }
 }
-@include title(heavy);

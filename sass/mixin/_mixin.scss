@@ -121,3 +121,58 @@
    border-radius: 6px;
    @include cardShadow(#333);
 }
+
+// @if @else @else if
+@mixin title($fonts:medium) {
+    .title {
+        @if $fonts ==heavy {
+            font-weight: 800;
+            font-size: 34px;
+            @include m(){
+                font-size: 50px;  
+            }
+        }
+
+        @else if $fonts ==medium {
+            font-weight: 500;
+            font-size: 28px;
+            @include m(){
+                font-size: 36px;  
+            }
+        }
+
+        @else if $fonts ==thin {
+            font-weight: 200;
+            font-size: 20px;
+            @include m(){
+                font-size: 26px;  
+            }
+        }
+    }
+}
+
+@mixin g-color($class, $bgc) {
+    @for $i from 1 through 10 {
+        .#{$class}-#{$i} {
+            background-color: lighten($bgc, $i *7.4);
+            width: 150px;
+            height: 30px;
+        }
+    }
+}
+
+@mixin push($val) {
+    @for $i from 1 through $val {
+        .p-left-#{$i} {
+            margin-left: $i * 1px;
+        }
+
+        .p-right-#{$i} {
+            margin-right: $i * 1px;
+        }
+
+        .p-top-#{$i} {
+            margin-top: $i * 1px;
+        }
+    }
+}

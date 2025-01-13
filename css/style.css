@@ -389,4 +389,34 @@ body, h1, h2, h3 {
   .title {
     font-size: 50px;
   }
+}
+
+.slider01-cover {
+  background-image: url("images/slider01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider02-cover {
+  background-image: url("images/slider02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide03-cover {
+  background-image: url("images/slide03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-cover {
+  background-image: url("images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner2-cover {
+  background-image: url("images/banner2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
