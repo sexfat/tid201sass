@@ -471,4 +471,84 @@ span {
 
 li {
   font-size: 14px;
+}
+
+.h6-bold---desktop {
+  font-size: 20px;
+}
+
+.h6-bold---mobile {
+  font-size: 18px;
+}
+
+.h6-semi-bold---desktop {
+  font-size: 20px;
+}
+
+.h6-semi-bold---mobile {
+  font-size: 18px;
+}
+
+.h6-medium---desktop {
+  font-size: 20px;
+}
+
+.h6-medium---mobile {
+  font-size: 18px;
+}
+
+.h6-regular---desktop {
+  font-size: 20px;
+}
+
+.h6-regular---mobile {
+  font-size: 18px;
+}
+
+.h5-bold---desktop {
+  font-size: 24px;
+}
+
+.h5-bold---mobile {
+  font-size: 20px;
+}
+
+.h5-semi-bold---desktop {
+  font-size: 24px;
+}
+
+.h5-semi-bold---mobile {
+  font-size: 20px;
+}
+
+.h5-medium---desktop {
+  font-size: 24px;
+}
+
+.h5-medium---mobile {
+  font-size: 20px;
+}
+
+.h5-regular---desktop {
+  font-size: 24px;
+}
+
+.h5-regular---mobile {
+  font-size: 20px;
+}
+
+.h4-bold---desktop {
+  font-size: 34px;
+}
+
+.h4-bold---mobile {
+  font-size: 24px;
+}
+
+.h4-semi-bold---desktop {
+  font-size: 34px;
+}
+
+.h4-semi-bold---mobile {
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */

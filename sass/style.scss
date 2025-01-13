@@ -135,3 +135,35 @@ $subject : (
 //   font-size: 36;
 // }
 //===============
+
+$fontvar : (
+    h6-bold---desktop: 20px,
+    h6-bold---mobile: 18px,
+    h6-semi-bold---desktop: 20px,
+    h6-semi-bold---mobile: 18px,
+    h6-medium---desktop: 20px,
+    h6-medium---mobile: 18px,
+    h6-regular---desktop: 20px,
+    h6-regular---mobile: 18px,
+    h5-bold---desktop: 24px,
+    h5-bold---mobile: 20px,
+    h5-semi-bold---desktop: 24px,
+    h5-semi-bold---mobile: 20px,
+    h5-medium---desktop: 24px,
+    h5-medium---mobile: 20px,
+    h5-regular---desktop: 24px,
+    h5-regular---mobile: 20px,
+    h4-bold---desktop: 34px,
+    h4-bold---mobile: 24px,
+    h4-semi-bold---desktop: 34px,
+    h4-semi-bold---mobile: 24px,
+);
+
+
+
+
+@each $k , $v in $fontvar {
+  .#{$k} {
+     font-size: $v;
+  }
+}
